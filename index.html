@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mead DB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray">
+    <h2 class="text-center text-success">search your favorite Food</h2>
+    <div class="input-group mb-3 w-50 mx-auto">
+      <input
+        type="text"
+        id="input-field"
+        class="form-control"
+        placeholder="search food"
+      />
+      <button
+        onclick="searchFood()"
+        class="btn btn-outline-secondary"
+        type="button"
+      >
+        search
+      </button>
+    </div>
+
+    <div class="loading">
+      <p id="spiner">loading...</p>
+    </div>
+    <!-- single meal deatils -->
+    <div id="meal-deatils" class="w-50 mx-auto"></div>
+    <!-- meal search result -->
+
+    <div id="searchResult" class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
